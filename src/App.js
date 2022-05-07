@@ -56,6 +56,8 @@ function App() {
     axios.get(baseURL + "/user").then((response) => {
       console.log(response);
       setUsers(response.data);
+
+      console.log("test test");
     }).catch(error => {
       console.error(error);
     });
